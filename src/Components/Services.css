@@ -1,0 +1,9 @@
+.service{
+    text-align: center;
+    color: blue;
+}
+.services{
+    display: flex;
+    color: black;
+    justify-content: right;
+}

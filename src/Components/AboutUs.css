@@ -1,0 +1,16 @@
+.about{
+   cursor: pointer;
+}
+.about-us{
+    cursor: pointer;
+    background-color: blue;
+    align-items: center;
+    font-size: 50px;
+    padding: 50px;
+    /* margin: auto; */
+    justify-items: center;
+    text-align: center;
+    color: white;
+    width: 700px;
+    cursor: alias;
+}

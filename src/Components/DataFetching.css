@@ -1,0 +1,32 @@
+.nav{
+    display: flex;
+    background-color:blue;
+    color: white;
+    justify-content: space-between;
+    padding-left: 30px;
+    height: 50px;
+    align-items: center;
+  }
+  .Images{
+    height: 20vw;
+    width: 20vw;
+  }
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .title{
+    font-size: 20px;
+  }
+  .product-title{
+    width: 300px;
+    background-color:antiquewhite;
+    margin: 10px;
+    /* border-radius:blue; */
+  }
+  .pro{
+    align-items: center;
+    justify-content: center;
+  }
