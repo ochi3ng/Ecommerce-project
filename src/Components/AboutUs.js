@@ -10,7 +10,10 @@ function AboutUs() {
     Let us help you accelerate online sales today.
     </p>
     </div>
+   <din className='one'>
+   <Footer/>
     <Footer/>
+   </din>
     </div>
   )
 }
