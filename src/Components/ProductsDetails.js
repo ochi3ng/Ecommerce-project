@@ -1,6 +1,7 @@
-import { useState,useEffect } from "react"
+import { useState,useEffect, useContext } from "react"
 import axios from "axios"
 import { useNavigate, useParams } from "react-router-dom"
+import { CartContext } from "../Context/Context"
 
 
 function ProductsDetails() {
@@ -20,13 +21,19 @@ function ProductsDetails() {
             setProduct(Response.data.find(item=> item.id===parseInt(id)))
         })
     }, [Url])
+    const GlobalState=useContext(CartContext);
+    const dispatch=GlobalState.dispatch;
+    console.log(GlobalState)
     if(product){
         return(
-            <div onClick={HomePage} className="pro">
+            <div>
                 Hello
-            <div className="title">{product.title}</div>
+              <div onClick={HomePage} className="pro">
+              <div className="title">{product.title}</div>
                 <img className="Images" src={product.image}/>
                 <div className="price">Ksh.{product.price}</div>
+              </div>
+                {/* <button onClick={() => dispatch({type:'ADD', payload: product})}>Add To Cart</button> */}
             </div>
         )
     }

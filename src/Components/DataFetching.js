@@ -5,7 +5,13 @@ import AboutUs from "./AboutUs"
 
 function DataFetching(){
   const  Url="https://fakestoreapi.com/products/"
-const[product,setProduct]=useState(null)
+const[product,setProduct]=useState([])
+const production=[]
+const onClickButton=(item)=>{
+    console.log(production, "hello") 
+    production.push(item);
+    
+}
 useEffect(()=>{
     axios.get(Url)
     .then(Response=>{
@@ -15,7 +21,7 @@ useEffect(()=>{
 if(product){
     return(
         <div className="header">
-     {product.map((item)=><h1><Products item={item}/></h1>)}
+     {product.map((item)=><div><Products item={item} onClickButton={onClickButton}/></div>)}
     
         </div>
     )

@@ -28,7 +28,10 @@ const Services=()=>{
       <h1 className="click-products">Products </h1>
       </div>
       <h1 className='click-products' onClick={Services}>Services</h1>
-      <h1 className='click-products'>More</h1>
+      <div className='logo-header'>
+      <img className='logo-basket' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgaoIL8olHQQgghKVD5jAGvhLYm9nJijOUKPbN8Dmt-KbKnzaikV-P3_BmeOGG4QKTlg&usqp=CAU'/>
+      <h1 className='number'>0</h1>
+      </div>
     </div>
   )
 }
